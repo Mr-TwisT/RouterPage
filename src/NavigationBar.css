@@ -1,0 +1,65 @@
+.container{
+  width: 100vw;
+  height: 10vh;
+}
+
+.navBar{
+  display: flex;
+  flex-direction: row;
+  background: chocolate;
+  width: 80%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  margin: auto auto;
+  position: sticky;
+  border-bottom: 4px solid black;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: relative;
+}
+
+.navBar::after{
+  content: '';
+  position: absolute;
+  background: white;
+  width: 80vw;
+  height: 5vh;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+}
+
+.box ul{
+  display: flex;
+}
+
+.box li{
+  list-style: none;
+  height: 100%;
+  margin: auto auto;
+  border-right: 4px dotted brown;
+  padding: 0 15px;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.box li:nth-last-child(1){
+  border-right: none;
+}
+
+.box li p{
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 15px auto;
+  padding: 5px;
+}
+
+.box li a{
+  text-decoration: none;
+}
+
+.box .active{
+  color: burlywood;
+}

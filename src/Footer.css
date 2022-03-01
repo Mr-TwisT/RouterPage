@@ -1,0 +1,25 @@
+.footer{
+  width: 80vw;
+  height: 5vh;
+  color: white;
+  background: black;
+  margin: auto auto;
+  text-align: center;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  position: relative;
+}
+
+.footer p{
+  padding-top: 5px;
+}
+
+.footer::before{
+  content: '';
+  position: absolute;
+  background: white;
+  width: 80vw;
+  height: 5vh;
+  z-index: -1;
+  left: 0;
+}

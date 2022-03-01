@@ -1,0 +1,8 @@
+.content{
+  width: 80vw;
+  min-height: 85vh;
+  margin: auto auto;
+  background: white;
+  position: relative;
+  z-index: 1;
+}
